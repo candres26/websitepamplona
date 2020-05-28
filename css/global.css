@@ -1,0 +1,223 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #E5E5E5;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 70px 400px 450px 400px 200px 300px;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+/*
+.item {
+    border: 1px solid blue;
+}
+*/
+.grid .item:nth-child(3) {
+    background: #FFFFFF;
+}
+
+.grid > .item:nth-child(4) {
+    background: #D4D2D2;f
+}
+
+.grid .item:nth-child(5) {
+    background: #FFFFFF;
+}
+
+.grid .item:nth-child(6) {
+    background: #4f5356;
+}
+
+.main-navbar {
+    background: #FFFFFF;
+    display: grid;
+    grid-template: 70px / 40% 60%;
+}
+
+.main-navbar:first-child img{
+    margin: 10px 40px;
+}
+
+.menu-items {
+    /*border: 1px solid lime;*/
+    display: grid;
+    grid-template: 69px / 8% 13% 14% 8% 13% 1fr;
+    align-items: center;
+}
+
+.menu-items .list-item {
+    /*border: 1px solid yellow;*/
+    font-weight: 400;
+    font-size: 0.9em;
+    justify-content: center;
+}
+
+.menu-items .list-item:nth-child(6) {
+    color: #81B349;
+    font-weight: 300;
+}
+.menu-items .list-item:nth-child(6) strong{
+    color: #81B349;
+    font-weight: 400;
+}
+
+.menu-items .list-item a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.slide img {
+    height: 100%;
+    width: 100%;
+}
+
+.section-suscription {
+    display: grid;
+    grid-template: 20% 40% 40% / 100%;
+    justify-items: center;
+}
+/*
+.section-suscription .item {
+    border: 1px solid #FFC000;
+}
+*/
+.section-suscription .item:first-child {
+    justify-self: start;
+}
+
+.section-suscription .item:nth-child(2) {
+    align-self: end;
+}
+
+.section-suscription .item:nth-child(3) {
+    font-weight: 300;
+    font-size: 0.8em;
+    align-self: start;
+}
+
+.suscription-email {
+    background: #F4F4F4;
+    border: 1px solid #A7A7A7;
+    font-family: 'Roboto Mono', monospace;
+    padding: 10px;
+    color: #BEBEBE;
+    border-radius: 3px;
+    width: 500px; 
+}
+
+.suscription-button {
+    background: #81B349;
+    color: #FFFFFF;
+    padding: 12px;
+    border-radius: 3px;
+    width: 100px; 
+    border: 1px solid #FFF;
+}
+
+.service-cards {
+    display: grid;
+    grid-template: 10% 90% / 100%;
+    grid-row-gap: 20px;
+}
+/*
+.service-cards .item {
+    border: 1px solid #007803;
+}
+*/
+
+.service-cards > .item:nth-child(2) {
+    display: grid;
+    grid-template: 90% / 5% repeat(3, 30%) 5%;
+}
+
+.card {
+    background: #FFFFFF;/*#75CBC8*/
+    border-radius: 9px;
+    height: 95%;
+    width: 80%;
+    margin: auto;
+    -webkit-box-shadow: -1px 2px 8px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 2px 8px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 2px 8px -1px rgba(0,0,0,0.75);
+    display: grid;
+    grid-template: 20% 57% 23% / 100%;
+    padding-bottom: 10px;
+    box-sizing: border-box; 
+}
+
+.card > .item:first-child {
+    align-self: end;
+    justify-self: center;
+}
+
+.button-more {
+    background: #FFCC29;
+    border: 3px solid #FFFFFF;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    color: #FFFFFF;
+    width: 80%;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.grid-general {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 70px 25px 500px 200px 300px;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.grid-general > .item:nth-child(2) {
+    background: #FFFFFF; 
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+.grid-general > .item:nth-child(3) {
+    background: #F9F9F9;
+    display: grid;
+    grid-template: 5% 90% / 100%;
+}
+
+.grid-general > .item:nth-child(3) > .item:first-child {
+    background: ;
+    background: ;
+    display: grid;
+    grid-template: 5% 90% / 100%;
+}
+
+.grid-general > .item:nth-child(4) {
+    background: #FFFFFF;
+}
+
+.grid-general .item:nth-child(5) {
+    background: #4F5356;
+}
+
+.div-greenpamplona {
+    background: #81B349;
+    height: 5px;
+    margin-bottom: 2px;
+    width: 100%;
+}
+
+.div-yellowpamplona {
+    height: 3px;
+    width: 100%;
+    background: #FFCC29;
+}

@@ -1,0 +1,26 @@
+@media all and (max-width:360px){
+    .grid {
+    	display: grid;
+    	grid-template-columns: 100%;
+    	grid-template-rows: 70px 200px 450px 400px 200px 300px;
+    	border: 1px solid red;
+    }
+
+	.section-suscription .item {
+		border: 1px solid blue;
+	}
+
+    .section-suscription .item:nth-child(3) {
+    	font-weight: 300;
+    	font-size: 0.5em;
+	}
+
+    .suscription-email {
+    	width: 60%;
+    }
+
+    .suscription-button {
+    	width: 28%;
+    	font-size: 0.7em;
+    }
+}
