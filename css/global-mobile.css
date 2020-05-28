@@ -1,26 +1,41 @@
 @media all and (max-width:360px){
+	.main-navbar:first-child img{
+    	margin: 15px 20px 5px;
+	}
+
+	.menu-items {
+		display: none;
+	}
+
     .grid {
     	display: grid;
     	grid-template-columns: 100%;
     	grid-template-rows: 70px 200px 450px 400px 200px 300px;
-    	border: 1px solid red;
     }
 
-	.section-suscription .item {
-		border: 1px solid blue;
+    .section-suscription {
+    	display: grid;
+    	grid-template: 20% 40% 10% / 100%;
+    	grid-row-gap: 10px;
+    	justify-items: center;
 	}
 
     .section-suscription .item:nth-child(3) {
     	font-weight: 300;
     	font-size: 0.5em;
+    	align-self: start;
+    	justify-self: center;
+    	width: 80%;
 	}
 
     .suscription-email {
-    	width: 60%;
+    	width: 58%;
+    	height: 20px;
     }
 
     .suscription-button {
-    	width: 28%;
+    	width: 30%;
     	font-size: 0.7em;
+    	padding: 5px;
     }
 }

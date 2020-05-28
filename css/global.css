@@ -41,7 +41,7 @@ body {
 
 .main-navbar {
     background: #FFFFFF;
-    display: grid;
+    display: inline-grid;
     grid-template: 70px / 40% 60%;
 }
 
@@ -85,7 +85,8 @@ body {
 .section-suscription {
     display: grid;
     grid-template: 20% 40% 40% / 100%;
-    justify-items: center;
+    grid-row-gap: 10px;
+    /*justify-items: center;*/
 }
 /*
 .section-suscription .item {
@@ -98,12 +99,14 @@ body {
 
 .section-suscription .item:nth-child(2) {
     align-self: end;
+    justify-self: center;
 }
 
 .section-suscription .item:nth-child(3) {
     font-weight: 300;
     font-size: 0.8em;
     align-self: start;
+    justify-self: center;
 }
 
 .suscription-email {
@@ -119,10 +122,12 @@ body {
 .suscription-button {
     background: #81B349;
     color: #FFFFFF;
-    padding: 12px;
+    font-family: 'Roboto Mono', monospace;
+    padding: 10px;
     border-radius: 3px;
-    width: 100px; 
+    width: 100px;
     border: 1px solid #FFF;
+    height: 42px;
 }
 
 .service-cards {
