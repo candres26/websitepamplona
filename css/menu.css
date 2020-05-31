@@ -3,13 +3,14 @@ nav {
 	justify-content: space-around;
 	align-items: center;
 	min-height: 10vh;
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 400;
 }
 
 .nav-links {
 	display: flex;
 	justify-content: space-around;
 	width: 100%;
+	margin-right: 12px;
 }
 
 .nav-links li {
@@ -18,10 +19,22 @@ nav {
 
 .nav-links a{
 	letter-spacing: 3px;
-	font-weight: bold;
 	font-size: 12px;
 	text-decoration: none;
 	color: #222222;
+}
+
+.line-service {
+	color: #81B349;
+	font-size: 0.8em;
+    font-weight: 300;
+    align-self: center;
+    margin-top: 4px;
+}
+
+.line-service strong{
+    color: #81B349;
+    font-weight: 400;
 }
 
 .burger {
@@ -37,10 +50,12 @@ nav {
 	transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
 	.nav-links {
 		width: 100%;
 	}
+
+	.line-service { display: none; }
 }
 
 @media (max-width: 360px), (max-width: 768px), (max-width: 800px){

@@ -42,41 +42,12 @@ body {
 .main-navbar {
     background: #FFFFFF;
     display: inline-grid;
-    grid-template: 70px / 40% 60%;
+    grid-template: 10vh / 30% 70%;
 }
 
 .main-navbar:first-child img{
-    margin: 10px 40px;
+    margin: 20px 40px 3px;
 }
-
-/*
-.menu-items {
-    border: 1px solid lime;
-    display: grid;
-    grid-template: 69px / 8% 13% 14% 8% 13% 1fr;
-    align-items: center;
-}
-
-.menu-items .list-item {
-    border: 1px solid yellow;
-    font-weight: 400;
-    font-size: 0.9em;
-    justify-content: center;
-}
-
-.menu-items .list-item:nth-child(6) {
-    color: #81B349;
-    font-weight: 300;
-}
-.menu-items .list-item:nth-child(6) strong{
-    color: #81B349;
-    font-weight: 400;
-}
-
-.menu-items .list-item a{
-    text-decoration: none;
-    color: #000000;
-}*/
 
 .slide img {
     height: 100%;
