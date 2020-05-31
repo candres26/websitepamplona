@@ -14,7 +14,7 @@ body {
 .grid {
     display: grid;
     grid-template-columns: 80%;
-    grid-template-rows: 70px 400px 450px 400px 200px 300px;
+    grid-template-rows: 10vh 400px 450px 400px 200px 300px;
     justify-content: center;
     margin-bottom: 5px;
 }
@@ -49,15 +49,16 @@ body {
     margin: 10px 40px;
 }
 
+/*
 .menu-items {
-    /*border: 1px solid lime;*/
+    border: 1px solid lime;
     display: grid;
     grid-template: 69px / 8% 13% 14% 8% 13% 1fr;
     align-items: center;
 }
 
 .menu-items .list-item {
-    /*border: 1px solid yellow;*/
+    border: 1px solid yellow;
     font-weight: 400;
     font-size: 0.9em;
     justify-content: center;
@@ -75,7 +76,7 @@ body {
 .menu-items .list-item a{
     text-decoration: none;
     color: #000000;
-}
+}*/
 
 .slide img {
     height: 100%;

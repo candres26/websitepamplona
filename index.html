@@ -6,6 +6,7 @@
     <title>Sistemas Pamplona</title>
     <link rel="stylesheet" href="css/global.css"/>
     <link rel="stylesheet" href="css/global-mobile.css"/>
+    <link rel="stylesheet" href="css/menu.css"/>
     <script>
         var state = true;
         
@@ -25,16 +26,20 @@
             	<img src="images/logo.png" alt="logo-sistemas-pamplona" width="120px"/>
         	</div>
         	<div class="item">
-	            <nav class="menu-navbar">
-	                <div class="menu-items">
-	                    <div class="list-item"><a href="index.html">Home</a></div>
-	                    <div class="list-item"><a href="nosotros.html">Nosotros</a></div>
-	                    <div class="list-item"><a href="servicios.html">Servicios</a></div>
-	                    <div class="list-item"><a href="blog.html">Blog</a></div>
-	                    <div class="list-item"><a href="contacto.html">Contacto</a></div>
-	                    <div class="list-item">Servicio Técnico <strong>318 5471853</strong></div>
-	                </div>
-	            </nav>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </nav>
         	</div>
         </div>
         <div class="item slide">
@@ -83,5 +88,6 @@
         </div>
         <div class="item" id="footer">Footer</div>  
     </div>
+    <script src="js/menu.js"></script>
 </body>
 </html>

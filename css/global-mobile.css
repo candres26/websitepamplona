@@ -1,4 +1,4 @@
-@media all and (max-width:360px){
+@media (max-width:360px){
 	.main-navbar:first-child img{
     	margin: 15px 20px 5px;
 	}
