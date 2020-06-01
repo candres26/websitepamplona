@@ -73,7 +73,7 @@ nav {
 		flex-direction: column;
 		align-items: center;
 		width: 60%;
-		transform: translateX(100%);
+		transform: translateX(106%);
 		transition: transform 0.5s ease-in;
 		font-size: 1em;
 	}
@@ -93,7 +93,7 @@ nav {
 }
 
 .nav-active {
-	transform: translateX(0%);
+	transform: translateX(6%);
 }
 
 @keyframes navLinkFade {
