@@ -50,24 +50,14 @@ nav {
 	transition: all 0.3s ease;
 }
 
-@media (max-width: 1024px) {
-	.nav-links {
-		width: 100%;
-	}
-
-	.line-service { display: none; }
-}
-
-@media (max-width: 360px), (max-width: 768px), (max-width: 800px){
-	body {
-		overflow-x: hidden; 
-	}
+@media (max-width: 768px), (max-width: 800px){
+	
 
 	.nav-links {
 		position: fixed;
 		right: 0px;
 		height: 92vh;
-		top: 8vh;
+		top: 10vh;
 		background-color: #FFFFFF;
 		display: flex;
 		flex-direction: column;
