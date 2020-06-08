@@ -2,6 +2,9 @@ const navSlide = () => {
 	const burger = document.querySelector('.burger');
 	const nav = document.querySelector('.nav-links');
 	const navLinks = document.querySelectorAll('.nav-links li');
+	const service = document.querySelector('.service');
+	const subMenu = document.querySelector('.sub-service-menu');
+
 
 	burger.addEventListener('click',() => {
 		// Toggle Nav
@@ -16,6 +19,20 @@ const navSlide = () => {
 		})
 
 		burger.classList.toggle('toggle');
+	})
+
+	service.addEventListener('click',()=>{
+		var links = ["Vigilancia","Mantenimiento","Venta de Accesorios"];
+		const ul = document.createElement("ul")
+		for(var link in links){
+			var li = document.createElement("li");
+			var contentLi = document.createTextNode(links[link]);
+			li.appendChild(contentLi);
+			ul.appendChild(li);
+		}
+		subMenu.classList.toggle('active');
+		console.log(ul);
+		subMenu.appendChild(ul);
 	})
 }
 

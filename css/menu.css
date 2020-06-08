@@ -64,7 +64,7 @@ nav {
 	}
 
 	.nav-links {
-		position: absolute;
+		position: fixed;
 		right: 0px;
 		height: 92vh;
 		top: 8vh;
@@ -76,6 +76,7 @@ nav {
 		transform: translateX(106%);
 		transition: transform 0.5s ease-in;
 		font-size: 1em;
+		z-index: 5;
 	}
 
 	.nav-links li {
@@ -89,6 +90,14 @@ nav {
 	.main-navbar .item:nth-child(2) {
     	justify-self: end;
     	margin-right: 20px;
+	}
+
+	.sub-service-menu{
+		display: none;
+	}
+		
+	.active{
+		display: inherit;
 	}
 }
 
@@ -116,5 +125,5 @@ nav {
 }
 
 .toggle .line3 {
-	transform: rotate(45deg) translate(-5px,-6px);
+	transform: rotate(45deg) translate(-4px,-5px);
 }
