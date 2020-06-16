@@ -4,9 +4,16 @@ const navSlide = () => {
 	const navLinks = document.querySelectorAll('.nav-links li');
 	const service = document.querySelector('.service');
 	const subMenu = document.querySelector('.sub-service-menu');
+	const frameOverlay = document.querySelector('.overlay');
 
 
 	burger.addEventListener('click',() => {
+		burger.classList.toggle('burgerFixed');		
+		if(frameOverlay.style.display === ""){
+			frameOverlay.style.display = "block";
+		}else{
+			frameOverlay.style.display = "";
+		}
 		// Toggle Nav
 		nav.classList.toggle('nav-active');
 		// Animate Links
@@ -19,20 +26,35 @@ const navSlide = () => {
 		})
 
 		burger.classList.toggle('toggle');
+
+
 	})
 
 	service.addEventListener('click',()=>{
-		var links = ["Vigilancia","Mantenimiento","Venta de Accesorios"];
-		const ul = document.createElement("ul")
-		for(var link in links){
-			var li = document.createElement("li");
-			var contentLi = document.createTextNode(links[link]);
-			li.appendChild(contentLi);
-			ul.appendChild(li);
-		}
-		subMenu.classList.toggle('active');
-		console.log(ul);
-		subMenu.appendChild(ul);
+		let links = ["Vigilancia","Mantenimiento","Venta de Accesorios"];
+		let list = document.querySelector('.list_service');
+		let wrapper_list = document.querySelector('.sub-service-menu');
+			if (list != null) {
+				subMenu.removeChild(list);
+				subMenu.classList.toggle('active');
+			}else{
+				const ul = document.createElement("ul");
+
+				for(var link in links){
+					let li = document.createElement("li");
+					let a = document.createElement("a");
+					let contentA = document.createTextNode(links[link]);
+					a.appendChild(contentA);
+					let textLinkHyper = links[link];
+					a.href = `${textLinkHyper.replace(/ /g, "").toLowerCase()}.html`;
+					li.appendChild(a);
+					ul.appendChild(li);
+				}
+
+				ul.classList.add('list_service');
+				subMenu.appendChild(ul);
+				subMenu.classList.toggle('active');
+			}
 	})
 }
 
