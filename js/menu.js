@@ -8,7 +8,9 @@ const navSlide = () => {
 
 
 	burger.addEventListener('click',() => {
-		burger.classList.toggle('burgerFixed');		
+		let list = document.querySelector('.list_service');
+		burger.classList.toggle('burgerFixed');
+
 		if(frameOverlay.style.display === ""){
 			frameOverlay.style.display = "block";
 		}else{
@@ -26,36 +28,50 @@ const navSlide = () => {
 		})
 
 		burger.classList.toggle('toggle');
-
-
+		if(subMenu.classList.contains('active')){
+			subMenu.removeChild(list);
+			subMenu.classList.toggle('active');
+		}
 	})
 
 	service.addEventListener('click',()=>{
-		let links = ["Vigilancia","Mantenimiento","Venta de Accesorios"];
+		let links = ["Vigilancia","Mantenimiento","Venta de Accesorios", "Recargas"];
 		let list = document.querySelector('.list_service');
-		let wrapper_list = document.querySelector('.sub-service-menu');
-			if (list != null) {
-				subMenu.removeChild(list);
-				subMenu.classList.toggle('active');
-			}else{
-				const ul = document.createElement("ul");
 
-				for(var link in links){
-					let li = document.createElement("li");
-					let a = document.createElement("a");
-					let contentA = document.createTextNode(links[link]);
-					a.appendChild(contentA);
-					let textLinkHyper = links[link];
-					a.href = `${textLinkHyper.replace(/ /g, "").toLowerCase()}.html`;
-					li.appendChild(a);
-					ul.appendChild(li);
-				}
+		if (list != null) {
+			subMenu.removeChild(list);
+			subMenu.classList.toggle('active');
+		}else{
+			const ul = document.createElement("ul");
 
-				ul.classList.add('list_service');
-				subMenu.appendChild(ul);
-				subMenu.classList.toggle('active');
+			for(var link in links){
+				let li = document.createElement("li");
+				let a = document.createElement("a");
+				let contentA = document.createTextNode(links[link]);
+				a.appendChild(contentA);
+				let textLinkHyper = links[link];
+				a.href = `${textLinkHyper.replace(/ /g, "").toLowerCase()}.html`;
+				li.appendChild(a);
+				ul.appendChild(li);
 			}
+
+			ul.classList.add('list_service');
+			subMenu.appendChild(ul);
+			subMenu.classList.toggle('active');
+		}
 	})
+
+	document.addEventListener('click', function(e){
+		let eleClic = e.target;
+		let list = document.querySelector('.list_service');
+		let btService = document.querySelector('.service');
+
+		if(eleClic != subMenu && subMenu.classList.contains('active') && eleClic != btService){
+			subMenu.removeChild(list);
+			subMenu.classList.toggle('active');
+		}
+	}, false)
+
 }
 
 navSlide();

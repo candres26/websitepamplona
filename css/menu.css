@@ -31,7 +31,7 @@ nav {
 	font-size: 0.8em;
     font-weight: 300;
     align-self: center;
-    margin-top: 4px;
+    /*margin-top: 4px;*/
 }
 
 .line-service strong{
@@ -50,6 +50,36 @@ nav {
 	background-color: #222222;
 	margin: 4px;
 	transition: all 0.3s ease;
+}
+
+.sub-service-menu{
+	border: 1px solid rgb(239, 239, 239);
+    background-color: #FFF;
+    position: absolute;
+    height: auto;
+    border-radius: 1px;
+    width: 200px;
+    display: none;
+    margin-top: 25px;
+    padding: 15px 25px; 
+    z-index: 100;
+}
+
+.sub-service-menu > ul {
+	margin-bottom: 15px;
+}
+
+.sub-service-menu > ul > li > a{
+	text-align: left;
+	margin-top: 15px;
+}
+
+.sub-service-menu > ul > li > a:hover{
+	color: #636363;
+}
+
+.active{
+	display: inherit;
 }
 
 @media (max-width: 768px), (max-width: 800px){
@@ -95,6 +125,11 @@ nav {
 
 	.sub-service-menu{
 		display: none;
+		position: relative;
+		width: 80%;
+		height: auto;
+		margin: auto;
+		border: 0px;
 	}
 
 	.active{
