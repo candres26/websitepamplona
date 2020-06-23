@@ -31,8 +31,13 @@
     	display: grid;
     	grid-template: 20% 40% 10% / 100%;
     	grid-row-gap: 10px;
-    	justify-items: center;
-	}
+    }
+
+    .section-suscription .item:first-child {
+      justify-items: stretch;
+      padding-left: 4px;
+      padding-top: 4px;
+    }
 
     .section-suscription .item:nth-child(3) {
     	font-weight: 300;
@@ -40,7 +45,7 @@
     	align-self: start;
     	justify-self: center;
     	width: 80%;
-	}
+    }
 
     .suscription-email {
     	width: 58%;
@@ -137,6 +142,18 @@
         display: inherit;
     }
     /*Fin Styles MainMenu*/
+
+    /*Footer*/
+    #footer{
+      border: 1px solid red;
+      display: grid;
+      grid-template: 1fr / 100px  1fr 1fr 1fr 100px;
+    }
+
+    #footer .item{
+      border: 1px solid red;
+    }
+    /*Fin Footer*/
 }
 
 @media screen and (max-width: 640px) and (orientation: landscape){

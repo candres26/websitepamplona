@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/global-mobile.css"/>
     <link rel="stylesheet" href="css/menu.css"/>
     <link rel="stylesheet" href="css/mainslide.css"/>
+    <link rel="stylesheet" href="css/fontello.css"/>
     
     <script>
         var state = true;
@@ -105,7 +106,7 @@
         		Nuestros <span>Servicios</span>
 			</div>
 			<div class="item">
-				<div class="item"><</div>
+				<div id="btPrevCar" class="item btCar btPrevCarrousel"><i class="icon-left-open-big"></i></div>
 				<div class="item">
                     <div class="card">
                         <div class="item">Instalación de Redes</div>
@@ -127,23 +128,43 @@
                         <div class="item"><a class="button-more" href="servicios.html">Saber más</a></div>
                     </div>
                 </div>
-				<div class="item">></div>
+				<div id="btNextCar" class="item btCar btNextCarrousel"><i class="icon icon-right-open-big"></i></div>
 			</div>
         </div>
         <div class="item">Nuestros <span>Clientes</span></div>
         <div class="item section-suscription">
-        	<div class="item">Suscribase</div>
         	<div class="item">
-        		<input type="text" class="suscription-email" placeholder="Correo electrónico"/>
-        		<input type="submit" class="suscription-button" value="Suscribirse" />
+                <div><img src="images/squares.png" alt=""></div>
+                <div class="title-section">Suscribase</div>
+            </div>
+        	<div class="item">
+                <form action="">
+        		  <input type="text" class="suscription-email" placeholder="Correo electrónico"/>
+        		  <input type="submit" class="suscription-button" value="Suscríbase" />  
+                </form>
         	</div>
         	<div class="item">
-        		<span>Para estar enterado de nuestras publicaciones suscríbete a nuestro newsletter.</span>
+        		<span>Para estar enterado de nuestras publicaciones suscríbase a nuestro newsletter.</span>
         	</div>
         </div>
-        <div class="item" id="footer">Footer</div>  
+        <div class="item" id="footer">
+            <div class="item"><img src="images/logo.png" class="logo-footer" alt="logo-sistemas-pamplona"></div>
+            <div class="item">
+                <h3>Servicios</h3>
+                <ul>
+                    <li>Mantenimiento</li>
+                    <li>Recarga de Toners y Cartuchos</li>
+                    <li>Instalación Sistemas de Seguridad</li>
+                    <li>Venta de Accesorios</li>
+                </ul>
+            </div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>  
     </div>
     <script src="js/menu.js"></script>
     <script src="js/mainslide.js"></script>
+    <script src="js/carrousel.js"></script>
 </body>
 </html>
