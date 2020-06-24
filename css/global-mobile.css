@@ -33,13 +33,13 @@
     	grid-row-gap: 10px;
     }
 
-    .section-suscription .item:first-child {
+    .section-suscription > .item:first-child {
       justify-items: stretch;
       padding-left: 4px;
       padding-top: 4px;
     }
 
-    .section-suscription .item:nth-child(3) {
+    .section-suscription > .item:nth-child(3) {
     	font-weight: 300;
     	font-size: 0.5em;
     	align-self: start;
@@ -129,7 +129,7 @@
         display: block;
     }
 
-    .main-navbar .item:nth-child(2) {
+    .main-navbar > .item:nth-child(2) {
         justify-self: end;
         margin-right: 20px;
     }
