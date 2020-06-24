@@ -142,18 +142,6 @@
         display: inherit;
     }
     /*Fin Styles MainMenu*/
-
-    /*Footer*/
-    #footer{
-      border: 1px solid red;
-      display: grid;
-      grid-template: 1fr / 100px  1fr 1fr 1fr 100px;
-    }
-
-    #footer .item{
-      border: 1px solid red;
-    }
-    /*Fin Footer*/
 }
 
 @media screen and (max-width: 640px) and (orientation: landscape){

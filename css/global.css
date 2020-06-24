@@ -22,7 +22,7 @@ body {
     border: 1px solid blue;
 }
 */
-.grid .item:nth-child(3) {
+.grid > .item:nth-child(3) {
     background: #FFFFFF;
 }
 
@@ -235,13 +235,36 @@ body {
 
 /*Footer*/
 #footer{
-  border: 1px solid red;
   display: grid;
-  grid-template: 1fr / 210px  1fr 1fr 1fr 100px;
+  grid-template: 1fr / 210px  1fr 1fr 200px 100px;
   color: #FFFFFF;
 }
 
-#footer .item{
+#footer > .item{
   border: 1px solid red;
+  padding-top: 30px;
 }
+
+#footer > .item:first-child{
+    align-self: center;
+}
+
+#footer > 
+
+#footer > .item ul{
+    margin-top: 10px;
+    list-style: none;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+#footer > .item ul > li{
+    margin: 10px 0 10px 0; 
+}
+
+.logo-footer{
+    width: 80%;
+    border: 1px solid blue;
+}
+
 /*Fin Footer*/
