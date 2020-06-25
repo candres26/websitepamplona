@@ -14,7 +14,7 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 85%;
-  grid-template-rows: 10vh 400px 450px 400px 200px 350px;
+  grid-template-rows: 10vh 400px 450px 350px 200px 350px;
   justify-content: center;
 }
 /*
@@ -71,6 +71,22 @@ body {
     width: 20px;
     position: relative;
     float: left;
+}
+
+.logos-customers{
+  display: grid;
+  grid-template: 170px / repeat(3, 170px);
+  justify-content: center;
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+}
+/*
+.logos-customers > .item{
+  border: 1px solid red;
+}
+*/
+.logos-customers > .item img{
+  width: 100%;
 }
 
 .section-suscription {
