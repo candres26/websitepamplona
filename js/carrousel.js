@@ -1,11 +1,13 @@
-let btPrev = document.getElementById('btPrevCar');
-let btNext = document.getElementById('btNextCar');
+const wrapper = document.querySelector('.wrapper-cards');
+const card = document.querySelector('.card');
+const btPrev = document.getElementById('btPrevCar');
+const btNext = document.getElementById('btNextCar');
 
 
 btPrev.addEventListener('click', ()=>{
-	alert("Atras <===");
+    wrapper.scrollLeft -= wrapper.offsetWidth;
 })
 
 btNext.addEventListener('click', ()=>{
-	alert("Adelante ===>");
+    wrapper.scrollLeft += wrapper.offsetWidth;
 })
