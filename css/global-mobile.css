@@ -24,7 +24,7 @@
     .grid {
     	display: grid;
     	grid-template-columns: 100%;
-    	grid-template-rows: 70px 200px 450px 400px 200px 300px;
+    	grid-template-rows: 70px 200px 450px max-content 200px max-content;
     }
 
     .section-suscription {
@@ -143,10 +143,33 @@
     }
     /*==== Fin Styles MainMenu ====*/
 
+    /*==== Cards Services ====*/
+    .service-cards > .item:nth-child(2){
+        display: grid;
+        grid-template: 90% / 12% 1fr 12%;
+    }
+    .card{
+        min-width: 90%;
+    }
+    /*==== Finc Cards Services ====*/
+
     /*==== Logos Customers ====*/
     .logos-customers{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 20px;
+        min-height: 300px;
+        margin-bottom: 30px;
+    }
+
+    .logos-customers .item{
+        padding: 10px 0px;
+    }
+
+    .logos-customers .item img{
+        margin: auto;
+        width: 100%;
     }
     /*==== Fin Logos Customers ====*/
 
@@ -161,7 +184,7 @@
     
     #footer .item{
         /*border: 1px solid red;*/
-        padding: 20px 40px;
+        padding: 15px 40px;
     }
 
     #footer .item:first-child{
@@ -185,7 +208,7 @@
 @media screen and (max-width: 640px) and (orientation: landscape){
     .grid{
         grid-template-columns: 100%;
-        grid-template-rows: 14vh 75vh 450px 400px 200px auto;
+        grid-template-rows: 14vh 75vh 450px max-content 200px max-content;
     }
 
     /*Main Menu*/
@@ -230,6 +253,17 @@
         bottom: 8px;
     }
     /*Fin Styles MainSlide*/
+
+    /*==== Logos Customers ====*/
+    .section-customers{
+        padding-bottom: 30px;
+    }
+
+    .section-customers .item:nth-child(2){
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /*==== Fin Logos Customers ====*/
 }
 
 @media (max-width: 800px){
