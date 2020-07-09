@@ -21,10 +21,16 @@
 		display: none;
 	}
 
-    .grid {
+    .grid-general {
     	display: grid;
     	grid-template-columns: 100%;
     	grid-template-rows: 70px 200px 450px max-content 200px max-content;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 70px 200px 450px max-content 200px max-content;
     }
 
     .section-suscription {
@@ -177,7 +183,7 @@
     #footer{
         display: flex;
         flex-direction: column;
-        height: 950px;
+        min-height: 950px;
         padding: 0px;
         padding-bottom: 30px;
     }
@@ -206,6 +212,11 @@
 }
 
 @media screen and (max-width: 640px) and (orientation: landscape){
+    .grid-general{
+        grid-template-columns: 100%;
+        grid-template-rows: 14vh 75vh 450px max-content 200px max-content;
+    }
+
     .grid{
         grid-template-columns: 100%;
         grid-template-rows: 14vh 75vh 450px max-content 200px max-content;

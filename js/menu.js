@@ -35,7 +35,7 @@ const navSlide = () => {
 	})
 
 	service.addEventListener('click',()=>{
-		let links = ["Vigilancia","Mantenimiento","Venta de Accesorios", "Recargas"];
+		let links = ["Montaje de Cámaras","Sistemas de Alarma","Cercas Eléctricas", "Montaje de Redes", "Dispositivos de Red", "Computadores", "Impresoras", "Servicio Técnico", "Venta de Suministros"];
 		let list = document.querySelector('.list_service');
 
 		if (list != null) {
@@ -49,7 +49,7 @@ const navSlide = () => {
 				let a = document.createElement("a");
 				let contentA = document.createTextNode(links[link]);
 				a.appendChild(contentA);
-				let textLinkHyper = links[link];
+				let textLinkHyper = eliminarDiacriticos(links[link]);
 				a.href = `${textLinkHyper.replace(/ /g, "").toLowerCase()}.html`;
 				li.appendChild(a);
 				ul.appendChild(li);
@@ -72,6 +72,11 @@ const navSlide = () => {
 		}
 	}, false)
 
+}
+
+// Elimina los diacríticos de un texto (ES6)
+function eliminarDiacriticos(texto) {
+    return texto.normalize('NFD').replace(/[\u0300-\u036f]/g,"");
 }
 
 navSlide();
