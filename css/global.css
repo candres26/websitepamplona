@@ -276,15 +276,17 @@ body {
 }
 /*====================== Fin Carousel =========================*/
 
+
+/*===== Estilos grid general =====*/
 .grid-general {
     display: grid;
     grid-template-columns: 80%;
-    grid-template-rows: 70px 25px 500px 200px 300px;
+    grid-template-rows: 70px 25px max-content 200px 300px;
     justify-content: center;
-    margin-bottom: 5px;
 }
+
 .grid-general > .item:nth-child(2) {
-    background: #FFFFFF; 
+    background: #FFFFFF;
     font-size: 0.7em;
     font-weight: 300;
 }
@@ -292,14 +294,8 @@ body {
 .grid-general > .item:nth-child(3) {
     background: #F9F9F9;
     display: grid;
-    grid-template: 5% 90% / 100%;
-}
-
-.grid-general > .item:nth-child(3) > .item:first-child {
-    background: ;
-    background: ;
-    display: grid;
-    grid-template: 5% 90% / 100%;
+    grid-template: 50px 90% / 100%;
+    padding-bottom: 30px;
 }
 
 .grid-general > .item:nth-child(4) {
@@ -323,6 +319,74 @@ body {
   background: #FFCC29;
 }
 
+.section-content > .item:first-child {
+    justify-items: stretch;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.section-content > .item:first-child img{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    float: left;
+}
+
+.section-content > .item:nth-child(2){
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.content-text > p{
+    font-size: 0.8em;
+    font-weight: 200;
+    text-align: justify;
+    margin: 10px 11px 35px;
+}
+
+.serviceTec{
+    background-color: #484848;
+    color: #FFF;
+    float: left;
+    padding-bottom: 10px;
+    position: relative;
+    margin-left: 1.555%;
+    margin-right: 1.555%;
+    min-height: 550px;
+    max-height: 600px;
+    width: 30%;
+}
+
+.serviceTec h4{
+    text-align: center;
+    margin: 25px 20px 10px 20px;
+    display: block;
+    height: 50px;
+}
+
+.serviceTec p{
+    color: #F5F5F5;
+    font-weight: 100;
+    font-size: 0.9em;
+    text-align: justify;
+    margin: 10px 20px;
+}
+
+.serviceTec figure{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.serviceTec figure img{
+    height: 180px;
+    margin: auto;
+    display: block;
+    position: relative;
+    width: 80%;
+}
+
+/*===== Fin Estilos grid general =====*/
+
 /*Estilos Carrousel*/
 
 .btCar{
@@ -345,14 +409,17 @@ body {
 
 
 /*Footer*/
+
 #footer{
   display: grid;
   grid-template: 1fr / 25%  1fr 1fr 32% 15%;
   color: #FFFFFF;
   padding-left: 10px;
   padding-right: 50px;
+  padding-bottom: 40px;
   grid-column-gap: 9px;
   box-sizing: border-box;
+  min-height: 350px;
 }
 
 #footer > .item{
