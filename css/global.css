@@ -281,7 +281,7 @@ body {
 .grid-general {
     display: grid;
     grid-template-columns: 80%;
-    grid-template-rows: 70px 25px max-content 200px 300px;
+    grid-template-rows: 70px 25px max-content 200px max-content;
     justify-content: center;
 }
 
@@ -399,11 +399,11 @@ body {
 
 .wrap-galery .pic{
   float: left;
-  height: 120px;
+  height: 115px;
   margin-left: 10px;
   margin-right: 10px;
   position: relative;
-  width: 180px;
+  width: 170px;
 }
 
 .wrap-galery .pic img{
@@ -439,64 +439,75 @@ body {
 
 #footer{
   display: grid;
-  grid-template: 1fr / 25%  1fr 1fr 32% 15%;
-  color: #FFFFFF;
+  grid-template: 400px 30px / 100%;
+  color: #FFF;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#footer .item{
+  /*border: 1px solid red;*/
+  font-size: 0.85em;
   padding-left: 10px;
-  padding-right: 50px;
-  padding-bottom: 40px;
-  grid-column-gap: 9px;
-  box-sizing: border-box;
-  min-height: 350px;
 }
 
-#footer > .item{
-  padding-top: 50px;
-  /*border: 1px solid red;*/
+#footer .item a{
+  color: #FFF;
+  text-decoration: none;
+}
+
+#footer .item ul{
+  list-style: none;
+}
+
+#footer .item ul li{
+  margin-bottom: 10px;
 }
 
 #footer > .item:first-child{
+  display: grid;
+  grid-template-columns: 20% 1fr 1fr 32% 20%;
+  grid-column-gap: 15px;
+}
+
+#footer > .item:first-child > .item{
+  padding-top: 80px;
+}
+
+#footer > .item:first-child > .item:first-child{
   align-self: center;
-  justify-self: center;
-}
-
-#footer p{
-  font-size: 0.7em;
-  margin-top: 10px;
-}
-
-#footer h4{
-  font-size: 0.9em;
-  font-weight: 500;
-  margin-top: 5px;
-}
-
-#footer h5{
-  font-size: 0.8em;
-  margin-top: 10px;
-}
-
-#footer > .item ul{
-  margin-top: 10px;
-  list-style: none;
-  font-weight: 300;
-  font-size: 0.8em;
-}
-
-#footer > .item ul > li{
-  margin: 10px 0 10px 0; 
+  justify-content: center;
+  padding-top: 0px;
 }
 
 .logo-footer{
-  margin-left: 20%;
-  margin-bottom: 35%;
-  width: 60%;
+  margin-left: 35px;
+  margin-bottom: 80px;
+  width: 76%;
 }
 
-.social-images{
+#footer > .item:first-child h4{
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+#footer > .item:first-child h5{
+  font-size: 1.1em;
+  margin-bottom: 10px; 
   margin-top: 10px;
 }
 
-.social-images img{
+#footer > .item:nth-child(2){
+  font-size: 0.7em;
+  display: grid;
+  grid-template-columns: 40% 40% 1fr;
+}
+#footer > .item:nth-child(2) > .item{
+  align-self: center;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+.social-images a img{
   height: 35px;
 }
 
