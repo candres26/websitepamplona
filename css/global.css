@@ -331,14 +331,22 @@ body {
     position: relative;
     float: left;
 }
+/*
+.section-content > .item{
+  border: 1px solid red;
+}*/
 
 .section-content > .item:nth-child(2){
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-row-gap: 80px;
+    grid-template-rows: max-content 1fr;
+    grid-row-gap: 15px;
     margin-left: 30px;
     margin-right: 30px;
 }
+/*
+.section-content > .item:nth-child(2)>.item{
+  border: 1px solid blue;
+}*/
 
 .content-text > p{
     font-size: 0.8em;
@@ -368,33 +376,33 @@ body {
 }
 
 .serviceTec p{
-    color: #F5F5F5;
-    font-weight: 100;
-    font-size: 0.9em;
-    text-align: justify;
-    margin: 10px 20px;
+  color: #F5F5F5;
+  font-weight: 100;
+  font-size: 0.9em;
+  text-align: justify;
+  margin: 10px 20px;
 }
 
 .serviceTec figure{
-    margin-top: 20px;
-    margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .serviceTec figure img{
-    height: 180px;
-    margin: auto;
-    display: block;
-    position: relative;
-    width: 80%;
+  height: 180px;
+  margin: auto;
+  display: block;
+  position: relative;
+  width: 80%;
 }
 
 .wrap-galery{
   height: auto;
+  min-height: 130px;
   position: relative;
   margin-top: 20px;
   margin: auto;
-  text-align: center;
-  width: 80%;
+  width: 81%;
 }
 
 .wrap-galery .pic{
@@ -445,7 +453,6 @@ body {
   padding-right: 20px;
 }
 #footer .item{
-  /*border: 1px solid red;*/
   font-size: 0.85em;
   padding-left: 10px;
 }

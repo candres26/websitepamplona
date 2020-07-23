@@ -181,14 +181,12 @@
 
     /*=== Footer ===*/
     #footer{
-        display: flex;
-        flex-direction: column;
-        min-height: 950px;
-        padding: 0px;
-        padding-bottom: 30px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 30px;
     }
     
-    #footer .item{
+    #footer > .item{
         /*border: 1px solid red;*/
         padding: 15px 40px;
     }
