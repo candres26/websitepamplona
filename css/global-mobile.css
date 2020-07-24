@@ -143,7 +143,7 @@
     .sub-service-menu{
         display: none;
     }
-        
+
     .active{
         display: inherit;
     }
@@ -163,7 +163,6 @@
     .logos-customers{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
         padding: 20px;
         min-height: 300px;
         margin-bottom: 30px;
@@ -183,29 +182,33 @@
     #footer{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 1fr 30px;
+        grid-template-rows: 1fr max-content;
+        padding-left: 0px;
+        padding-right: 0px;
     }
-    
+
     #footer > .item{
-        /*border: 1px solid red;*/
-        padding: 15px 40px;
+        border: 1px solid red;
+        padding: 15px 15px;
+    }
+    #footer > .item:first-child{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 160px repeat(3, max-content) 150px;
+    }
+    #footer > .item:first-child > .item{
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    #footer > .item:first-child > .item:first-child{
+        margin-top: 70px;
     }
 
-    #footer .item:first-child{
-        height: 115px;
-        padding-top: 40px;
+    #footer > .item:nth-child(2){
+        display: grid;
+        grid-template: repeat(3, max-content) / 100%;
     }
 
-    #footer .item:nth-child(5){
-        align-self: center;
-        padding-top: 30px;
-    }
-
-    .logo-footer{
-        display: block;
-        margin: auto;
-        width: 65%;
-    }
     /*=== Fin Footer ===*/
 }
 
