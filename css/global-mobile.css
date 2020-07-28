@@ -21,12 +21,6 @@
 		display: none;
 	}
 
-    .grid-general {
-    	display: grid;
-    	grid-template-columns: 100%;
-    	grid-template-rows: 70px 200px 450px max-content 200px max-content;
-    }
-
     .grid {
         display: grid;
         grid-template-columns: 100%;
@@ -210,6 +204,15 @@
     }
 
     /*=== Fin Footer ===*/
+
+    /*=== Grid General ===*/
+    .grid-general {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 70px 2  0px 450px max-content 200px max-content;
+    }
+
+    /*=== Fin Gid General ===*/
 }
 
 @media screen and (max-width: 640px) and (orientation: landscape){

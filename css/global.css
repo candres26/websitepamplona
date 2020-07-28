@@ -302,7 +302,7 @@ body {
     background: #FFFFFF;
 }
 
-.grid-general .item:nth-child(5) {
+.grid-general > .item:nth-child(5) {
   background: #4F5356;
 }
 
