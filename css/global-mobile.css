@@ -212,6 +212,9 @@
         grid-template-rows: 70px 2  0px 450px max-content 200px max-content;
     }
 
+    .wrap-galery > .pic {
+        margin-bottom: 10px;
+    }
     /*=== Fin Gid General ===*/
 }
 
