@@ -10,7 +10,7 @@
 
 @media screen and (max-width: 360px){
     body {
-        overflow-x: hidden; 
+        overflow-x: hidden;
     }
 
 	.main-navbar:first-child img{
@@ -188,7 +188,7 @@
     }
 
     #footer > .item{
-        border: 1px solid red;
+        /*border: 1px solid red;*/
         padding: 15px 15px;
     }
     #footer > .item:first-child{
