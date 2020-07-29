@@ -209,19 +209,80 @@
     .grid-general {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 70px 2  0px 450px max-content 200px max-content;
+        grid-template-rows: 70px 20px 450px max-content 200px max-content;
     }
 
     .wrap-galery > .pic {
         margin-bottom: 10px;
     }
+
+    .content-contact {
+        display: grid;
+        grid-template: repeat(3, max-content) / 100%;
+    }
+
+    .content-contact > .item {
+        /*border: 1px solid red;*/
+    }
+
+    .map-wrapper > iframe {
+        height: 350px;
+        width: 100%;
+    }
+
+    .contact-form{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .contact-form label{
+        color: #FFC829;
+        display: block;
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+
+    .contact-form input[type=text]{
+        border: none;
+        border-radius: 2px;
+        padding: 10px 5px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-form input[type=submit]{
+        background-color: #FFCC29;
+        border: none;
+        color: #FFF;
+        font-weight: bold;
+        margin-top: 45px;
+        padding: 10px 5px;
+        width: 100%;
+    }
+
+    .contact-form textarea{
+        border: none;
+        border-radius: 2px;
+        box-sizing: border-box;
+        height: 100px;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .form-contact > h5{
+        text-align: center;
+        color: #FFC829;
+        margin-top: 20px;
+        margin-bottom: -10px;
+    }
     /*=== Fin Gid General ===*/
 }
 
 @media screen and (max-width: 640px) and (orientation: landscape){
-    .grid-general{
+    .grid-general {
+        display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 14vh 75vh 450px max-content 200px max-content;
+        grid-template-rows: 70px 2  0px 450px max-content 200px max-content;
     }
 
     .grid{
@@ -287,6 +348,11 @@
 @media (max-width: 800px){
     .grid{
         grid-template-columns: 100%;
+    }
+
+    .grid-general{
+        grid-template-columns: 100%;
+        grid-template-rows: 14vh 75vh 450px max-content 200px max-content;
     }
 }
 
