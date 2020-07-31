@@ -1,4 +1,4 @@
-@media screen and (max-width: 320px){
+/*@media screen and (max-width: 320px){
     body {
         overflow-x: hidden; 
     }
@@ -6,7 +6,7 @@
     .main-navbar:first-child img{
         width: 100px;
     }
-}
+}*/
 
 @media screen and (max-width: 360px){
     body {
@@ -279,17 +279,12 @@
 }
 
 @media screen and (max-width: 640px) and (orientation: landscape){
-    .grid-general {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 70px 2  0px 450px max-content 200px max-content;
-    }
 
     .grid{
         grid-template-columns: 100%;
-        grid-template-rows: 14vh 75vh 450px max-content 200px max-content;
+        grid-template-rows: 14vh 75vh 450px max-content 200px auto;
     }
-
+    
     /*Main Menu*/
     .main-navbar {
         grid-template: 14vh / 30% 70%;
@@ -343,6 +338,42 @@
         padding-right: 20px;
     }
     /*==== Fin Logos Customers ====*/
+    /*==== Footer ====*/
+    #footer{
+        background-color: #C6009C;
+    }
+
+    #footer > .item{
+        border: 1px solid red;
+    }
+
+    #footer > .item:first-child .item{
+        padding-top: 0px;
+    }
+
+    #footer > .item:first-child{
+        background-color: #FFAA88;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    #footer > .item:first-child > .item:first-child{
+        background-color: yellow;
+    }
+
+    #footer > .item:first-child > .item:nth-child(5){
+        background-color: #00E31F;
+        grid-row-start: 2;
+    }
+
+    /*==== Fin Footer ====*/
+
+    .grid-general {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 70px 20px 450px max-content 200px max-content;
+    }
 }
 
 @media (max-width: 800px){
@@ -352,7 +383,7 @@
 
     .grid-general{
         grid-template-columns: 100%;
-        grid-template-rows: 14vh 75vh 450px max-content 200px max-content;
+        /*grid-template-rows: 14vh 75vh 450px max-content 200px max-content;*/
     }
 }
 
