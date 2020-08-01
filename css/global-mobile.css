@@ -284,14 +284,15 @@
         grid-template-columns: 100%;
         grid-template-rows: 14vh 75vh 450px max-content 200px auto;
     }
-    
+
     /*Main Menu*/
     .main-navbar {
         grid-template: 14vh / 30% 70%;
     }
 
     .main-navbar:first-child img {
-        margin: 3px 40px 3px;
+        margin: 2px 40px 9px;
+        width: 125px;
     }
 
     /*Fin Main Menu*/
@@ -328,43 +329,112 @@
     }
     /*Fin Styles MainSlide*/
 
+    /*==== Suscription ====*/
+    .section-suscription > .item:nth-child(2) {
+        padding-top: 20px;
+        justify-self: center;
+        width: 80%;
+    }
+
+    .section-suscription .item:nth-child(3) {
+        font-weight: 300;
+        font-size: 0.7em;
+        align-self: start;
+        justify-self: center;
+    }
+    .suscription-email {
+        background: #F4F4F4;
+        border: 1px solid #A7A7A7;
+        font-family: 'Roboto Mono', monospace;
+        padding: 10px;
+        color: #929292;
+        border-radius: 3px;
+        width: 75%;
+    }
+
+    .suscription-button {
+        background: #81B349;
+        color: #FFFFFF;
+        font-family: 'Roboto Mono', monospace;
+        padding: 10px;
+        border-radius: 3px;
+        width: 18%;
+        border: 1px solid #FFF;
+        height: 42px;
+        font-size: 0.6em;
+    }
+
+    /*==== Fin Suscription ====*/
+
     /*==== Logos Customers ====*/
     .section-customers{
         padding-bottom: 30px;
     }
 
-    .section-customers .item:nth-child(2){
+    .section-customers > .item:nth-child(2){
         padding-left: 20px;
         padding-right: 20px;
     }
     /*==== Fin Logos Customers ====*/
-    /*==== Footer ====*/
-    #footer{
-        background-color: #C6009C;
-    }
 
-    #footer > .item{
-        border: 1px solid red;
-    }
+    /*==== Footer ====*/
+    /*#footer{
+        background-color: #C6009C;
+    }*/
+
+    #footer .item {
+        /*border: 1px solid red;*/
+        font-size: 0.75em;
+        padding-left: 0px;
+}
 
     #footer > .item:first-child .item{
-        padding-top: 0px;
+        padding-top: 35px;
     }
 
     #footer > .item:first-child{
-        background-color: #FFAA88;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 18% 25% 15% 42%;
+        grid-template-rows: repeat(2, 50%);
+        grid-gap: 5px;
     }
 
     #footer > .item:first-child > .item:first-child{
-        background-color: yellow;
+        align-self: inherit;
+        padding-left: 0px;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding-top: 40px;
+    }
+
+    #footer > .item:first-child > .item:nth-child(2){
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    #footer > .item:first-child > .item:nth-child(3){
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    #footer > .item:first-child > .item:nth-child(4){
+        grid-row-start: 1;
+        grid-row-end: 3;
     }
 
     #footer > .item:first-child > .item:nth-child(5){
-        background-color: #00E31F;
         grid-row-start: 2;
+        grid-row-end: span 3;
+        height: 100px
+    }
+
+    .logo-footer {
+        margin-left: 10px;
+        width: 85%;
+    }
+
+    .social-images a img {
+        height: 28px;
     }
 
     /*==== Fin Footer ====*/
