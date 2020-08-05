@@ -7,14 +7,17 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="852"
-   height="469"
-   viewBox="0 0 852 469"
-   fill="none"
+   width="792.09686"
+   height="506.25604"
+   viewBox="0 0 792.09686 506.25604"
    version="1.1"
    id="svg4"
    sodipodi:docname="backgreen.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:export-filename="/var/www/html/serverdev/html/websitepamplona/images/backgreen.svg.png"
+   inkscape:export-xdpi="7"
+   inkscape:export-ydpi="7"
+   style="fill:none">
   <metadata
      id="metadata10">
     <rdf:RDF>
@@ -42,17 +45,21 @@
      inkscape:window-height="746"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="0.86150235"
-     inkscape:cx="517.90704"
-     inkscape:cy="257.30613"
+     inkscape:zoom="0.60917415"
+     inkscape:cx="614.84868"
+     inkscape:cy="336.73335"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg4" />
+     inkscape:current-layer="svg4"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <path
-     d="M 0.5,469 V 0.5 H 493.42643 L 740.06676,469 Z"
+     d="M 0,504.61447 V 0 L 548.7397,1.6415667 792.09689,506.25604 Z"
      id="path2"
      inkscape:connector-curvature="0"
-     style="fill:#81b349"
+     style="fill:#81b349;stroke-width:1.03782725"
      sodipodi:nodetypes="ccccc" />
 </svg>
