@@ -82,7 +82,7 @@ nav {
 	display: inherit;
 }
 
-@media (max-width: 768px), (max-width: 800px){
+@media (max-width: 768px), (max-width: 812px){
 
 	.nav-links {
 		position: fixed;

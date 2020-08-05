@@ -27,6 +27,7 @@
         grid-template-rows: 70px 200px 450px max-content 200px max-content;
     }
 
+    /*==== Section Suscription ====*/
     .section-suscription {
     	display: grid;
     	grid-template: 20% 40% 10% / 100%;
@@ -57,6 +58,7 @@
     	font-size: 0.7em;
     	padding: 5px;
     }
+    /*==== Fin Section Suscription ====*/
 
     /*Styles MainSlide*/
     .home{
@@ -340,42 +342,56 @@
     }
     /*Fin Styles MainSlide*/
 
-    /*==== Suscription ====*/
-    .section-suscription > .item:nth-child(2) {
-        padding-top: 20px;
-        justify-self: center;
-        width: 80%;
+    /*==== Cards Services ====*/
+    .service-cards > .item:nth-child(2){
+        display: grid;
+        grid-template: 90% / 15% 1fr 15%;
+    }
+    .card{
+        margin-left: 15px;
+        margin-right: 15px;
+        min-width: 90%;
+    }
+    /*==== Finc Cards Services ====*/
+
+    /*==== Section Suscription ====*/
+    .section-suscription {
+        display: grid;
+        grid-template: 20% 40% 10% / 100%;
+        grid-row-gap: 10px;
     }
 
-    .section-suscription .item:nth-child(3) {
+    .section-suscription > .item:first-child {
+      justify-items: stretch;
+      padding-left: 4px;
+      padding-top: 4px;
+    }
+
+    .section-suscription .item:nth-child(2) {
+        align-self: end;
+        justify-self: center;
+        width: 90%;
+    }
+
+    .section-suscription > .item:nth-child(3) {
         font-weight: 300;
-        font-size: 0.7em;
+        font-size: 0.6em;
         align-self: start;
         justify-self: center;
+        width: 90%;
     }
+
     .suscription-email {
-        background: #F4F4F4;
-        border: 1px solid #A7A7A7;
-        font-family: 'Roboto Mono', monospace;
-        padding: 10px;
-        color: #929292;
-        border-radius: 3px;
-        width: 75%;
+        width: 60%;
+        height: 20px;
     }
 
     .suscription-button {
-        background: #81B349;
-        color: #FFFFFF;
-        font-family: 'Roboto Mono', monospace;
-        padding: 10px;
-        border-radius: 3px;
-        width: 18%;
-        border: 1px solid #FFF;
-        height: 42px;
-        font-size: 0.6em;
+        width: 30%;
+        font-size: 0.7em;
+        padding: 5px;
     }
-
-    /*==== Fin Suscription ====*/
+    /*==== Fin Section Suscription ====*/
 
     /*==== Logos Customers ====*/
     .section-customers{
@@ -388,67 +404,38 @@
     }
     /*==== Fin Logos Customers ====*/
 
-    /*==== Footer ====*/
-    /*#footer{
-        background-color: #C6009C;
-    }*/
-
-    #footer .item {
-        /*border: 1px solid red;*/
-        font-size: 0.75em;
+    /*=== Footer ===*/
+    #footer{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr max-content;
         padding-left: 0px;
+        padding-right: 0px;
     }
 
-    #footer > .item:first-child .item{
-        padding-top: 35px;
+    #footer > .item{
+        /*border: 1px solid red;*/
+        padding: 15px 15px;
     }
-
     #footer > .item:first-child{
         display: grid;
-        grid-template-columns: 18% 25% 15% 42%;
-        grid-template-rows: repeat(2, 50%);
-        grid-gap: 5px;
+        grid-template-columns: 100%;
+        grid-template-rows: 160px repeat(3, max-content) 150px;
     }
-
+    #footer > .item:first-child > .item{
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
     #footer > .item:first-child > .item:first-child{
-        align-self: inherit;
-        padding-left: 0px;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        padding-top: 40px;
+        margin-top: 70px;
     }
 
-    #footer > .item:first-child > .item:nth-child(2){
-        grid-row-start: 1;
-        grid-row-end: 3;
+    #footer > .item:nth-child(2){
+        display: grid;
+        grid-template: repeat(3, max-content) / 100%;
     }
 
-    #footer > .item:first-child > .item:nth-child(3){
-        grid-row-start: 1;
-        grid-row-end: 3;
-    }
-
-    #footer > .item:first-child > .item:nth-child(4){
-        grid-row-start: 1;
-        grid-row-end: 3;
-    }
-
-    #footer > .item:first-child > .item:nth-child(5){
-        grid-row-start: 2;
-        grid-row-end: span 3;
-        height: 100px
-    }
-
-    .logo-footer {
-        margin-left: 10px;
-        width: 85%;
-    }
-
-    .social-images a img {
-        height: 27px;
-    }
-
-    /*==== Fin Footer ====*/
+    /*=== Fin Footer ===*/
 
     .grid-general {
         display: grid;
@@ -779,6 +766,173 @@
 
     .social-images a img {
         height: 28px;
+    }
+
+    /*==== Fin Footer ====*/
+
+    .grid-general {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 70px 20px 450px max-content 200px max-content;
+    }
+}
+@media screen and (min-width: 801px) and (max-width: 812px) and (orientation: landscape){
+
+    .grid{
+        grid-template-columns: 100%;
+        grid-template-rows: 70px 250px 450px max-content 200px auto;
+    }
+
+    /*Main Menu*/
+    .main-navbar {
+        grid-template: 14vh / 30% 70%;
+    }
+
+    .main-navbar:first-child img {
+        margin: 2px 40px 9px;
+        width: 125px;
+    }
+
+    /*Fin Main Menu*/
+
+    /*Styles MainSlide*/
+
+    .home .container {
+        height: 100%;
+    }
+
+    .home .container .caption{
+        width: 70%;
+        height: 95%;
+        margin-left: 50px;
+        margin-top: 0px;
+    }
+
+    .home .container .caption h1{
+        margin: 0;
+        font-size: 8vw;
+        padding-top: 0px;
+    }
+
+    .home .container .caption p{
+        font-size: 6vw;
+    }
+
+    .home .container .caption a{
+        position: absolute;
+        width: 60px;
+        text-align: center;
+        padding: 5px 12px;
+        bottom: 8px;
+    }
+    /*Fin Styles MainSlide*/
+
+    /*==== Suscription ====*/
+    .section-suscription > .item:nth-child(2) {
+        padding-top: 20px;
+        justify-self: center;
+        width: 80%;
+    }
+
+    .section-suscription .item:nth-child(3) {
+        font-weight: 300;
+        font-size: 0.7em;
+        align-self: start;
+        justify-self: center;
+    }
+    .suscription-email {
+        background: #F4F4F4;
+        border: 1px solid #A7A7A7;
+        font-family: 'Roboto Mono', monospace;
+        padding: 10px;
+        color: #929292;
+        border-radius: 3px;
+        width: 75%;
+    }
+
+    .suscription-button {
+        background: #81B349;
+        color: #FFFFFF;
+        font-family: 'Roboto Mono', monospace;
+        padding: 10px;
+        border-radius: 3px;
+        width: 18%;
+        border: 1px solid #FFF;
+        height: 42px;
+        font-size: 0.6em;
+    }
+
+    /*==== Fin Suscription ====*/
+
+    /*==== Logos Customers ====*/
+    .section-customers{
+        padding-bottom: 30px;
+    }
+
+    .section-customers > .item:nth-child(2){
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /*==== Fin Logos Customers ====*/
+
+    /*==== Footer ====*/
+    /*#footer{
+        background-color: #C6009C;
+    }*/
+
+    #footer .item {
+        /*border: 1px solid red;*/
+        font-size: 0.75em;
+        padding-left: 0px;
+    }
+
+    #footer > .item:first-child .item{
+        padding-top: 35px;
+    }
+
+    #footer > .item:first-child{
+        display: grid;
+        grid-template-columns: 18% 25% 15% 42%;
+        grid-template-rows: repeat(2, 50%);
+        grid-gap: 5px;
+    }
+
+    #footer > .item:first-child > .item:first-child{
+        align-self: inherit;
+        padding-left: 0px;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding-top: 40px;
+    }
+
+    #footer > .item:first-child > .item:nth-child(2){
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    #footer > .item:first-child > .item:nth-child(3){
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    #footer > .item:first-child > .item:nth-child(4){
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    #footer > .item:first-child > .item:nth-child(5){
+        grid-row-start: 2;
+        grid-row-end: span 3;
+        height: 100px
+    }
+
+    .logo-footer {
+        margin-left: 10px;
+        width: 85%;
+    }
+
+    .social-images a img {
+        height: 27px;
     }
 
     /*==== Fin Footer ====*/
