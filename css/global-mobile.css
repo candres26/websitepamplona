@@ -214,8 +214,12 @@
         grid-template-rows: 70px 20px max-content 200px max-content;
     }
 
-    .wrap-galery > .pic {
-        margin-bottom: 10px;
+    .wrap-galery .pic {
+        float: left;
+        height: 180px;
+        position: relative;
+        width: 100%;
+        margin: 14px auto;
     }
 
     .content-contact {
@@ -440,8 +444,37 @@
     .grid-general {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 70px 20px 450px max-content 200px max-content;
+        grid-template-rows: 70px 20px max-content 200px max-content;
     }
+
+    .serviceTec{
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    .serviceTec p {
+        margin: 10px 40px;
+    }
+
+    .wrap-galery {
+        height: auto;
+        /* min-height: 130px; */
+        position: relative;
+        margin-top: 20px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .wrap-galery .pic {
+        float: left;
+        height: 210px;
+        margin-left: 10px;
+        margin-right: 10px;
+        position: relative;
+        width: 100%;
+        margin: 15px auto;
+    }
+
 }
 @media screen and (min-width: 361px) and (max-width: 640px) and (orientation: landscape){
 
@@ -607,7 +640,26 @@
     .grid-general {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 70px 20px 450px max-content 200px max-content;
+        grid-template-rows: 70px 20px max-content 200px max-content;
+    }
+
+    .wrap-galery {
+        height: auto;
+        /* min-height: 130px; */
+        position: relative;
+        margin-top: 20px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .wrap-galery .pic {
+        float: left;
+        height: 210px;
+        margin-left: 10px;
+        margin-right: 10px;
+        position: relative;
+        width: 48%;
+        margin: 15px 5px;
     }
 }
 @media screen and (min-width: 641px) and (max-width: 800px){
@@ -773,7 +825,24 @@
     .grid-general {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 70px 20px 450px max-content 200px max-content;
+        grid-template-rows: 70px 20px max-content 200px max-content;
+    }
+
+    .wrap-galery {
+        height: auto;
+        /* min-height: 130px; */
+        position: relative;
+        margin-top: 20px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .wrap-galery .pic {
+        float: left;
+        height: 210px;
+        position: relative;
+        width: 48%;
+        margin: 14px 5px;
     }
 }
 @media screen and (min-width: 801px) and (max-width: 812px) and (orientation: landscape){
@@ -940,7 +1009,7 @@
     .grid-general {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 70px 20px 450px max-content 200px max-content;
+        grid-template-rows: 70px 20px max-content 200px max-content;
     }
 }
 
