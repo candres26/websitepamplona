@@ -294,7 +294,7 @@ body {
 .grid-general > .item:nth-child(3) {
     background: #F9F9F9;
     display: grid;
-    grid-template: 50px 90% / 100%;
+    grid-template: 50px 1fr / 100%;
     padding-bottom: 30px;
 }
 
